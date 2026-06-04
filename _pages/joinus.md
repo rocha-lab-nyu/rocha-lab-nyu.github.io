@@ -17,6 +17,6 @@ If you are an NYU PhD student interested in rotating, email [Joana](mailto:joana
 
 We welcome postdocs whose interests connect to evolutionary ecology and genomics. If you are interested in joining our team please email [Joana](mailto:joana.rocha@nyu.edu) to discuss opportunities. Please include a 1) CV and a 2) brief description of your research/career interests and why the lab is a good fit and 3) contact information for 2–3 references. We don't currently have funding to support additional postdoctoral researchers, but are always willing to work with motivated people to identify funding sources.
 
-### Undergraduate Students and Visiting Scholars
+### Undergraduate, Master's and Visiting students
 
-We have limited spaces available for undergraduate students outside NYU Biology major.
+Please email [Joana](mailto:joana.rocha@nyu.edu) with your CV and a short description of your research interests. We have limited spaces available for students outside NYU CAS Biology for Fall and Spring semesters at the moment.
