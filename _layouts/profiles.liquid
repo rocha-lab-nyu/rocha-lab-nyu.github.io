@@ -1,6 +1,19 @@
 ---
 layout: page
 ---
+<style>
+  .profile-socials {
+    margin-top: 0.6rem;
+    font-size: 1.3rem;
+  }
+  .profile-socials a {
+    margin-right: 0.7rem;
+    color: var(--global-theme-color);
+  }
+  .profile-socials a:hover {
+    color: var(--global-text-color);
+  }
+</style>
 <div class="post">
   <article>
     {% if page.profiles %}
@@ -28,6 +41,9 @@ layout: page
             {{ profile_content | markdownify }}
           {% else %}
             {{ content }}
+          {% endif %}
+          {% if profile.social %}
+            <div class="profile-socials">{% social_links %}</div>
           {% endif %}
         </div>
       {% endfor %}

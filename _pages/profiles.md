@@ -11,6 +11,7 @@ profiles:
     image: joana_rocha.jpg
     content: about_pi.md
     image_circular: false
+    social: true
 
   - align: left
     image: hannah_waterman.jpg
