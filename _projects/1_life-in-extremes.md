@@ -9,10 +9,16 @@ importance: 1
 Deserts are bellwethers for climate change and are outstanding natural laboratories to study biological adaptation. Since the start of my PhD research, we have sought to advance our general understanding of the genetic basis and evolutionary mechanisms underlying mammalian adaptation to extreme arid and hyper-arid environments. To address this, we use a set of integrative approaches to study the demographic and adaptive history of North-African foxes and other desert-dwelling species.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/fox.jpg" alt="Field check-up and blood collection of a fox" class="img-fluid rounded z-depth-1" %}
+    <div class="col-md-6 mb-3 mb-md-0">
+        <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 0.5rem;">
+            <img src="{{ '/assets/img/fox.jpg' | relative_url }}" alt="Field check-up and blood collection of a Rüppell's fox" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" />
+        </div>
     </div>
-    <iframe width="360" height="290" src="https://www.youtube.com/embed/Bj3nsLKdbic" title="Rüppell's fox at a cage-trap" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="col-md-6 mb-3 mb-md-0">
+        <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 0.5rem;">
+            <iframe src="https://www.youtube.com/embed/Bj3nsLKdbic" title="Rüppell's fox at a cage-trap" style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
 </div>
 <div class="caption">
     Left: check-up and blood collection. Right: a curious Rüppell's fox inspecting a cage-trap at night.
