@@ -2,12 +2,12 @@
 layout: page
 title: join us
 permalink: /joinus/
-description: We are recruiting! The Rocha Lab is a new and growing group looking for curious, motivated people at every career stage.
+description: The Rocha Lab is excited and committed to build a supportive, inclusive, and collaborative training environment. We are a small, new group looking for curious, motivated people with diverse perspectives and backgrounds, at every career stage.
 nav: true
 nav_order: 6
 ---
 
-We are excited to build a collaborative research group with diverse perspectives and backgrounds. If our work resonates with you, we would love to hear from you — please reach out before applying so we can find the best fit.
+If our work resonates with you, we would love to hear from you — please reach out before applying so we can find the best fit.
 
 ## Prospective PhD students
 
@@ -26,7 +26,3 @@ We are also glad to develop and support fellowship applications together.
 ## Undergraduate & Master's students
 
 NYU undergraduate and Master's students looking for research experience are encouraged to get in touch. Email Joana at <a href="mailto:joana.rocha@nyu.edu">joana.rocha@nyu.edu</a> with a short note about your interests, your year, and your availability.
-
----
-
-The Rocha Lab is committed to a supportive, inclusive, and collaborative training environment, and we strongly encourage applications from people of all backgrounds and identities.
