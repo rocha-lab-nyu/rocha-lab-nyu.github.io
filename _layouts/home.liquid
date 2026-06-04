@@ -128,26 +128,46 @@ layout: default
 </div>
 
 <script>
-  // Keep the hero video playing continuously: browsers pause autoplay video when
-  // the tab loses focus (and sometimes for power saving). Resume it whenever the
-  // page is visible so the animation never stays stopped.
+  // Keep the hero video looping forever. The `loop` attribute handles this in most
+  // browsers; as a backstop we also jump back to the start whenever the clip ends
+  // (or pauses at the very end — play() alone won't rewind a finished clip), and
+  // resume whenever the page becomes visible again.
   (function () {
     var video = document.querySelector("video.home-hero__media");
     if (!video) return;
-    function resume() {
-      if (document.hidden) return;
+    video.loop = true;
+    video.muted = true;
+    function play() {
       var attempt = video.play();
       if (attempt && attempt.catch) attempt.catch(function () {});
     }
-    video.addEventListener("ended", resume); // backstop for the loop attribute
+    function restart() {
+      try {
+        video.currentTime = 0;
+      } catch (e) {}
+      play();
+    }
+    video.addEventListener("ended", restart);
     video.addEventListener("pause", function () {
-      if (!document.hidden) resume();
+      if (document.hidden) return;
+      if (video.duration && video.currentTime >= video.duration - 0.4) {
+        restart();
+      } else {
+        play();
+      }
     });
     document.addEventListener("visibilitychange", function () {
-      if (!document.hidden) resume();
+      if (!document.hidden) play();
     });
-    window.addEventListener("pageshow", resume);
-    setInterval(resume, 2000); // safety net while the page is visible
-    resume();
+    window.addEventListener("pageshow", play);
+    setInterval(function () {
+      if (document.hidden) return;
+      if (video.ended) {
+        restart();
+      } else if (video.paused) {
+        play();
+      }
+    }, 1000);
+    play();
   })();
 </script>
