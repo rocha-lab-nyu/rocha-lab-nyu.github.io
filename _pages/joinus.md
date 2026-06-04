@@ -7,22 +7,14 @@ nav: true
 nav_order: 6
 ---
 
-If our work resonates with you, we would love to hear from you — please reach out before applying so we can find the best fit.
+## Graduate Students
 
-## Prospective PhD students
+If you are an NYU PhD student interested in rotating, email [Joana](mailto:joana.rocha@nyu.edu) with a description of your research interests. The Department of NYU Biology is always looking for exceptional graduate students with passion for integrating diverse approaches and multi-disciplinary research to address fundamental questions in biology. Interested students are encouraged to email [Joana](mailto:joana.rocha@nyu.edu) to discuss opportunities prior to applying to the [NYU Biology PhD program](https://as.nyu.edu/departments/biology/academics/phd/applying-to-the-phd-program.html). Please make sure you have consulted the Graduate Student Handbook in advance, and include a CV and a short description of your research interests and career goals as well as why you think you would be a good fit for our lab group.
 
-Apply to the [NYU Biology PhD program](https://as.nyu.edu/departments/biology/academics/phd/applying-to-the-phd-program.html) — applications are due **December 1**, and no GRE is required. Before applying, email Joana at <a href="mailto:joana.rocha@nyu.edu">joana.rocha@nyu.edu</a> with a short note about your research interests and a CV. Feel free to ask about lab rotations.
+## Postdoctoral Researchers
 
-## Postdoctoral researchers
+We welcome postdocs whose interests connect to evolutionary ecology and genomics. If you are interested in joining our team please email [Joana](mailto:joana.rocha@nyu.edu) to discuss opportunities. Please include a 1) CV and a 2) brief description of your research/career interests and why the lab is a good fit and 3) contact information for 2–3 references. We don't currently have funding to support additional postdoctoral researchers, but are always willing to work with motivated people to identify funding sources.
 
-We welcome postdocs whose interests connect to evolutionary genomics and environmental change biology. Email Joana at <a href="mailto:joana.rocha@nyu.edu">joana.rocha@nyu.edu</a> with:
+## Undergraduate Students and Visiting Scholars
 
-- a brief description of your research interests and why the lab is a good fit,
-- your CV, and
-- contact information for 2–3 references.
-
-We are also glad to develop and support fellowship applications together.
-
-## Undergraduate & Master's students
-
-NYU undergraduate and Master's students looking for research experience are encouraged to get in touch. Email Joana at <a href="mailto:joana.rocha@nyu.edu">joana.rocha@nyu.edu</a> with a short note about your interests, your year, and your availability.
+We have limited spaces available for undergraduate students outside NYU Biology major.
