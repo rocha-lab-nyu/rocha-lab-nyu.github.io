@@ -126,3 +126,28 @@ layout: default
     </aside>
   {% endif %}
 </div>
+
+<script>
+  // Keep the hero video playing continuously: browsers pause autoplay video when
+  // the tab loses focus (and sometimes for power saving). Resume it whenever the
+  // page is visible so the animation never stays stopped.
+  (function () {
+    var video = document.querySelector("video.home-hero__media");
+    if (!video) return;
+    function resume() {
+      if (document.hidden) return;
+      var attempt = video.play();
+      if (attempt && attempt.catch) attempt.catch(function () {});
+    }
+    video.addEventListener("ended", resume); // backstop for the loop attribute
+    video.addEventListener("pause", function () {
+      if (!document.hidden) resume();
+    });
+    document.addEventListener("visibilitychange", function () {
+      if (!document.hidden) resume();
+    });
+    window.addEventListener("pageshow", resume);
+    setInterval(resume, 2000); // safety net while the page is visible
+    resume();
+  })();
+</script>
