@@ -1,28 +1,11 @@
 ---
 layout: page
 ---
-<style>
-  .people-group-heading {
-    margin-top: 2.5rem;
-    margin-bottom: 0.75rem;
-    color: var(--global-theme-color);
-    font-weight: 500;
-  }
-  .people-group-heading:first-of-type {
-    margin-top: 1rem;
-  }
-</style>
 <div class="post">
   <article>
     {% if page.profiles %}
-      {% assign current_group = '' %}
       {% for profile in page.profiles %}
-        {% if profile.group and profile.group != current_group %}
-          {% assign current_group = profile.group %}
-          <h2 class="people-group-heading">{{ current_group }}</h2>
-        {% else %}
-          <hr />
-        {% endif %}
+        <hr />
         <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
           {% if profile.image %}
             {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
