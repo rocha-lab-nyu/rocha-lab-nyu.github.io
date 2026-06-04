@@ -196,10 +196,10 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - _pages/about_pi.md
-  - _pages/about_member1.md
-  - _pages/about_member2.md
+  - _pages/about_hannah.md
+  - _pages/about_kate.md
+  - _pages/about_alex.md
   - purgecss.config.js
   - README.md
   - readme_preview/

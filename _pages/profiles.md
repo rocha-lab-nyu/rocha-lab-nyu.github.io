@@ -7,23 +7,37 @@ nav: true
 nav_order: 2
 
 profiles:
-  - align: right
-    image: # TODO: drop a photo at assets/img/<name>.jpg and put the filename here
+  - group: Principal Investigator
+    align: right
+    image: joana_rocha.jpg
     content: about_pi.md
-    image_circular: true
+    image_circular: false
     more_info: >
-      <p>Principal Investigator</p>
+      <p>Assistant Professor</p>
       <p>Department of Biology, NYU</p>
-  - align: left
-    image: # TODO: drop a photo at assets/img/<name>.jpg and put the filename here
-    content: about_member1.md
-    image_circular: true
+
+  - group: Postdoctoral Researchers
+    align: left
+    image: hannah_waterman.jpg
+    content: about_hannah.md
+    image_circular: false
     more_info: >
-      <p>TODO: role · year</p>
-  - align: right
-    image: # TODO: drop a photo at assets/img/<name>.jpg and put the filename here
-    content: about_member2.md
-    image_circular: true
+      <p>Postdoctoral Associate</p>
+
+  - group: Graduate Students
+    align: right
+    image: kate_lavallee.jpg
+    content: about_kate.md
+    image_circular: false
     more_info: >
-      <p>TODO: role · year</p>
+      <p>PhD Student</p>
+
+  - group: Undergraduate Researchers
+    align: left
+    image: alex.jpg
+    content: about_alex.md
+    image_circular: false
+    more_info: >
+      <p>Visiting Summer Researcher</p>
+      <p>Vassar College</p>
 ---
