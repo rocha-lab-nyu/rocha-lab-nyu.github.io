@@ -1,6 +1,7 @@
 # this file contains the social media links and usernames of the author
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
-# bluesky_username: # TODO: add Joana's Bluesky handle (e.g., joanocha.bsky.social)
 x_username: joanocha # X (Twitter) handle
+linkedin_username: joanocha # LinkedIn (linkedin.com/in/joanocha)
+bluesky_username: joanocha.bsky.social # Bluesky — best guess, please confirm handle
 scholar_userid: eL8onmAAAAAJ # Google Scholar ID

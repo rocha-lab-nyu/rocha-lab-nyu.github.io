@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /people/
 title: people
-description: members of the Rocha Lab
+description: Current Lab Members
 nav: true
 nav_order: 2
 
