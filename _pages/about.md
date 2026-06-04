@@ -14,6 +14,6 @@ announcements:
   limit: 5
 ---
 
-**Welcome!** The **Rocha Lab** in the [Department of Biology](https://as.nyu.edu/departments/biology.html) at NYU studies the genetic basis of how species adapt and evolve in response to changing environments — shifts in climate, habitat, pathogens, and resource availability. We combine population and comparative genomics, fieldwork, and evolutionary theory to understand life in some of the planet's most extreme and rapidly changing places.
+**Welcome!** Our group studies the origins and genetic bases of how species adapt and evolve in response to changing environments. We combine state-of-the-art population and comparative genomics with historical and/or ecological data, fieldwork, and evolutionary theory to understand life in some of the planet's most extreme and rapidly changing places.
 
-We are a new and growing group. Meet [the people](/people/), explore our [research](/research/) and [publications](/publications/), or read about [joining us](/joinus/).
+If you are interested in our lab, meet [the people](/people/), explore our [research](/research/) and [publications](/publications/), or read about [joining us](/joinus/).
