@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 {% comment %} Custom landing page: full-bleed media hero + welcome / news columns. {% endcomment %}
 
 <style>
@@ -101,19 +100,23 @@ layout: default
       muted
       playsinline
       preload="metadata"
-      {% if page.hero_poster %}poster="{{ page.hero_poster | relative_url }}"{% endif %}
-    >
-      <source src="{{ page.hero_video | relative_url }}" type="video/mp4" />
       {% if page.hero_poster %}
-        <img class="home-hero__media" src="{{ page.hero_poster | relative_url }}" alt="{{ page.hero_alt }}" />
+        poster="{{ page.hero_poster | relative_url }}"
+      {% endif %}
+    >
+      <source src="{{ page.hero_video | relative_url }}" type="video/mp4">
+      {% if page.hero_poster %}
+        <img class="home-hero__media" src="{{ page.hero_poster | relative_url }}" alt="{{ page.hero_alt }}">
       {% endif %}
     </video>
   {% elsif page.hero_poster %}
-    <img class="home-hero__media" src="{{ page.hero_poster | relative_url }}" alt="{{ page.hero_alt }}" />
+    <img class="home-hero__media" src="{{ page.hero_poster | relative_url }}" alt="{{ page.hero_alt }}">
   {% endif %}
   <div class="home-hero__overlay">
     <h1 class="home-hero__title">{{ site.title }}</h1>
-    {% if page.hero_subtitle %}<p class="home-hero__subtitle">{{ page.hero_subtitle }}</p>{% endif %}
+    {% if page.hero_subtitle %}
+      <p class="home-hero__subtitle">{{ page.hero_subtitle }}</p>
+    {% endif %}
   </div>
 </div>
 
@@ -133,7 +136,7 @@ layout: default
   // (or pauses at the very end — play() alone won't rewind a finished clip), and
   // resume whenever the page becomes visible again.
   (function () {
-    var video = document.querySelector("video.home-hero__media");
+    var video = document.querySelector('video.home-hero__media');
     if (!video) return;
     video.loop = true;
     video.muted = true;
@@ -147,8 +150,8 @@ layout: default
       } catch (e) {}
       play();
     }
-    video.addEventListener("ended", restart);
-    video.addEventListener("pause", function () {
+    video.addEventListener('ended', restart);
+    video.addEventListener('pause', function () {
       if (document.hidden) return;
       if (video.duration && video.currentTime >= video.duration - 0.4) {
         restart();
@@ -156,10 +159,10 @@ layout: default
         play();
       }
     });
-    document.addEventListener("visibilitychange", function () {
+    document.addEventListener('visibilitychange', function () {
       if (!document.hidden) play();
     });
-    window.addEventListener("pageshow", play);
+    window.addEventListener('pageshow', play);
     setInterval(function () {
       if (document.hidden) return;
       if (video.ended) {

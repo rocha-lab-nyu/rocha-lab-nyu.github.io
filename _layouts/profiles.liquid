@@ -25,7 +25,7 @@ layout: page
   <article>
     {% if page.profiles %}
       {% for profile in page.profiles %}
-        <hr />
+        <hr>
         <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
           {% if profile.image %}
             {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
@@ -52,19 +52,39 @@ layout: page
           {% if profile.social %}
             {% assign s = site.data.socials %}
             <div class="profile-socials">
-              {% if s.x_username %}<a href="https://x.com/{{ s.x_username }}" title="X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>{% endif %}
-              {% if s.bluesky_username %}<a href="https://bsky.app/profile/{{ s.bluesky_username }}" title="Bluesky" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky"></i></a>{% endif %}
-              {% if s.linkedin_username %}<a href="https://www.linkedin.com/in/{{ s.linkedin_username }}" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>{% endif %}
-              {% if s.scholar_userid %}<a href="https://scholar.google.com/citations?user={{ s.scholar_userid }}" title="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>{% endif %}
+              {% if s.x_username -%}
+                <a href="https://x.com/{{ s.x_username }}" title="X" target="_blank" rel="noopener noreferrer"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              {%- endif %}
+              {% if s.bluesky_username -%}
+                <a href="https://bsky.app/profile/{{ s.bluesky_username }}" title="Bluesky" target="_blank" rel="noopener noreferrer"
+                  ><i class="fa-brands fa-bluesky"></i
+                ></a>
+              {%- endif %}
+              {% if s.linkedin_username -%}
+                <a href="https://www.linkedin.com/in/{{ s.linkedin_username }}" title="LinkedIn" target="_blank" rel="noopener noreferrer"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              {%- endif %}
+              {% if s.scholar_userid -%}
+                <a
+                  href="https://scholar.google.com/citations?user={{ s.scholar_userid }}"
+                  title="Google Scholar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="ai ai-google-scholar"></i
+                ></a>
+              {%- endif %}
             </div>
           {% endif %}
         </div>
       {% endfor %}
 
       <!-- Open invitation -->
-      <hr />
+      <hr>
       <div class="profile float-left join-image">
-        <img class="img-fluid" src="{{ '/assets/img/TRANSPARENT.gif' | relative_url }}" alt="Join the Rocha Lab" />
+        <img class="img-fluid" src="{{ '/assets/img/TRANSPARENT.gif' | relative_url }}" alt="Join the Rocha Lab">
       </div>
       <div class="clearfix">
         <p><strong>You?</strong></p>
