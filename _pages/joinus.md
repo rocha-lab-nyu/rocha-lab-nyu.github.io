@@ -11,7 +11,7 @@ The Rocha Lab is excited and committed to build a supportive, inclusive, and col
 
 ### Graduate Students
 
-If you are an NYU PhD student interested in rotating, reach out to [Joana](mailto:joana.rocha@nyu.edu) with a description of your research interests. The Department of Biology at NYU is always looking for exceptional graduate students with passion for multi-disciplinary research to address fundamental questions in biology. Interested students are encouraged to email [Joana](mailto:joana.rocha@nyu.edu) to discuss opportunities prior to applying to the [NYU Biology PhD program](https://as.nyu.edu/departments/biology/academics/phd/applying-to-the-phd-program.html). Before reaching out, please make sure you have consulted Graduate Student online resources in advance. Then, include a CV and a short description of your research interests and career goals as well as why you think you would be a good fit for our lab group.
+If you are an NYU PhD student interested in rotating, reach out to [Joana](mailto:joana.rocha@nyu.edu) with a description of your research interests. The Department of Biology at NYU is always looking for exceptional graduate students with passion for multi-disciplinary research to address fundamental questions in biology. Interested students are encouraged to email [Joana](mailto:joana.rocha@nyu.edu) to discuss opportunities prior to applying to the [NYU Biology PhD program](https://as.nyu.edu/departments/biology/academics/phd/applying-to-the-phd-program.html). Before reaching out, please make sure you have consulted Graduate Student online resources in advance. Then, include a CV and a short description of your research interests and career goals as well as why you think you would be a good fit for our group.
 
 ### Postdoctoral Researchers
 
@@ -19,4 +19,4 @@ We welcome postdocs whose interests connect to evolutionary ecology and genomics
 
 ### Undergraduate, Master's students and Visiting Scholars
 
-We have limited spaces available for undergraduate students outside NYU CAS Biology for Fall and Spring semesters. Please email [Joana](mailto:joana.rocha@nyu.edu) with your CV and a short description of your research interests. Be considerate and respectful when you do; and don't use AI.
+We have limited spaces available for undergraduate students outside NYU CAS Biology for Fall and Spring semesters. Please email [Joana](mailto:joana.rocha@nyu.edu) with your CV and a short description of your research interests. Be respectful: don't use AI.
