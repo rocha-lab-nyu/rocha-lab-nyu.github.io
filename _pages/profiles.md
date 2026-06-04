@@ -26,4 +26,9 @@ profiles:
     image: alex.jpg
     content: about_alex.md
     image_circular: false
+
+  - align: right
+    image: isabel_cantor.jpg
+    content: about_isabel.md
+    image_circular: false
 ---

@@ -200,6 +200,7 @@ exclude:
   - _pages/about_hannah.md
   - _pages/about_kate.md
   - _pages/about_alex.md
+  - _pages/about_isabel.md
   - purgecss.config.js
   - README.md
   - readme_preview/
