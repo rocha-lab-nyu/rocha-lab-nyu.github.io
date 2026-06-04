@@ -10,7 +10,7 @@ hero_alt: Illustrated fox moving through a watercolor landscape
 
 announcements:
   enabled: true # news panel on the right of the welcome section
-  scrollable: true
+  scrollable: false
   limit: 5
 ---
 
