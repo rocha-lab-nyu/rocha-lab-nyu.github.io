@@ -1,6 +1,26 @@
 ---
 layout: page
 ---
+<style>
+  .profile-socials {
+    margin-top: 0.6rem;
+    font-size: 1.3rem;
+  }
+  .profile-socials a {
+    margin-right: 0.7rem;
+    color: var(--global-theme-color);
+  }
+  .profile-socials a:hover {
+    color: var(--global-text-color);
+  }
+  /* Make the "You?" join image a bit larger than the square member photos
+     (the fox is transparent line-art, so it reads small at the default width). */
+  @media (min-width: 576px) {
+    .profile.join-image {
+      width: 42%;
+    }
+  }
+</style>
 <div class="post">
   <article>
     {% if page.profiles %}
@@ -29,8 +49,50 @@ layout: page
           {% else %}
             {{ content }}
           {% endif %}
+          {% if profile.social %}
+            {% assign s = site.data.socials %}
+            <div class="profile-socials">
+              {% if s.x_username -%}
+                <a href="https://x.com/{{ s.x_username }}" title="X" target="_blank" rel="noopener noreferrer"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              {%- endif %}
+              {% if s.bluesky_username -%}
+                <a href="https://bsky.app/profile/{{ s.bluesky_username }}" title="Bluesky" target="_blank" rel="noopener noreferrer"
+                  ><i class="fa-brands fa-bluesky"></i
+                ></a>
+              {%- endif %}
+              {% if s.linkedin_username -%}
+                <a href="https://www.linkedin.com/in/{{ s.linkedin_username }}" title="LinkedIn" target="_blank" rel="noopener noreferrer"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              {%- endif %}
+              {% if s.scholar_userid -%}
+                <a
+                  href="https://scholar.google.com/citations?user={{ s.scholar_userid }}"
+                  title="Google Scholar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="ai ai-google-scholar"></i
+                ></a>
+              {%- endif %}
+            </div>
+          {% endif %}
         </div>
       {% endfor %}
+
+      <!-- Open invitation -->
+      <hr>
+      <div class="profile float-left join-image">
+        <img class="img-fluid" src="{{ '/assets/img/TRANSPARENT.gif' | relative_url }}" alt="Join the Rocha Lab">
+      </div>
+      <div class="clearfix">
+        <p><strong>You?</strong></p>
+        <p>
+          If you would like to join the lab, read about
+          <a href="{{ '/joinus/' | relative_url }}">joining us</a>.
+        </p>
+      </div>
     {% endif %}
   </article>
 </div>

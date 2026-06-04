@@ -2,28 +2,34 @@
 layout: profiles
 permalink: /people/
 title: people
-description: members of the Rocha Lab
+description: Current Lab Members
 nav: true
 nav_order: 2
 
 profiles:
   - align: right
-    image: # TODO: drop a photo at assets/img/<name>.jpg and put the filename here
+    image: joana_rocha.jpg
     content: about_pi.md
-    image_circular: true
-    more_info: >
-      <p>Principal Investigator</p>
-      <p>Department of Biology, NYU</p>
+    image_circular: false
+    social: true
+
   - align: left
-    image: # TODO: drop a photo at assets/img/<name>.jpg and put the filename here
-    content: about_member1.md
-    image_circular: true
-    more_info: >
-      <p>TODO: role · year</p>
+    image: hannah_waterman.jpg
+    content: about_hannah.md
+    image_circular: false
+
   - align: right
-    image: # TODO: drop a photo at assets/img/<name>.jpg and put the filename here
-    content: about_member2.md
-    image_circular: true
-    more_info: >
-      <p>TODO: role · year</p>
+    image: kate_lavallee.jpg
+    content: about_kate.md
+    image_circular: false
+
+  - align: left
+    image: alex.jpg
+    content: about_alex.md
+    image_circular: false
+
+  - align: right
+    image: isabel_cantor.jpg
+    content: about_isabel.md
+    image_circular: false
 ---

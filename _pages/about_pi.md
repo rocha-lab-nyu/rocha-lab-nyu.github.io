@@ -1,11 +1,5 @@
-<!-- TODO: replace with PI bio. Suggested structure:
-1) One sentence on background (where trained, prior labs).
-2) Two sentences on research interests in environmental change biology.
-3) Optional: outside-of-science line — what you do for fun, where you grew up, etc.
--->
+**Joana L. Rocha**, Principal Investigator (she/her)
 
-**Joana L. Rocha** is an assistant professor in the [Department of Biology](https://as.nyu.edu/departments/biology.html) at NYU. _Placeholder bio: trained at [institutions], previously [roles]._
+I'm an Assistant Professor of Biology and Principal Investigator at NYU. I am broadly interested in all aspects surrounding biodiversity, genetics, and evolution. The integrative nature of my curiosity and research has led me to many exciting questions and discoveries on the origins of adaptive genetic variation, on the mechanisms shaping mammalian genetic diversity and genome structures, and on how different species respond to shifting selective pressures throughout different spatiotemporal scales.
 
-Her research focuses on **environmental change biology**: _placeholder — how organisms cope with shifting climates, contaminants, and habitats, with an emphasis on [system / methods]._
-
-Outside the lab she enjoys _placeholder_.
+When I am not doing science, I enjoy being in close contact with nature and sharing all the wonders our planet has to offer with the people I love.

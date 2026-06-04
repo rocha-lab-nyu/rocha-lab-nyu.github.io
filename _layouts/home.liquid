@@ -1,0 +1,176 @@
+---
+layout: default
+---
+{% comment %} Custom landing page: full-bleed media hero + welcome / news columns. {% endcomment %}
+
+<style>
+  .home-hero {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+    margin-top: -1.5rem;
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+    background-color: #e9e6dd;
+  }
+  .home-hero__media {
+    display: block;
+    width: 100%;
+    height: clamp(300px, 58vh, 600px);
+    object-fit: cover;
+    object-position: center 45%;
+  }
+  .home-hero__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    pointer-events: none;
+  }
+  .home-hero__title {
+    margin: 0;
+    font-size: clamp(2.6rem, 7vw, 5rem);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    color: #2a2a2a;
+    text-shadow:
+      0 2px 22px rgba(247, 245, 238, 0.9),
+      0 1px 4px rgba(247, 245, 238, 0.95);
+  }
+  .home-hero__subtitle {
+    margin: 0.5rem 0 0;
+    font-size: clamp(0.9rem, 1.7vw, 1.2rem);
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #3a3a3a;
+    text-shadow: 0 1px 12px rgba(247, 245, 238, 0.95);
+  }
+
+  .home-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    align-items: flex-start;
+  }
+  .home-welcome {
+    flex: 1 1 60%;
+    min-width: 16rem;
+  }
+  .home-welcome p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+  .home-news {
+    flex: 1 1 25%;
+    min-width: 14rem;
+  }
+  .home-news h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--global-theme-color);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-bottom: 0.35rem;
+    margin-bottom: 1rem;
+  }
+  .home-news .news .table th,
+  .home-news .news .table td {
+    padding: 0.2rem 0.5rem 0.6rem 0;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 768px) {
+    .home-hero__media {
+      height: clamp(220px, 40vh, 360px);
+    }
+  }
+</style>
+
+<div class="home-hero">
+  {% if page.hero_video %}
+    <video
+      class="home-hero__media"
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="metadata"
+      {% if page.hero_poster %}
+        poster="{{ page.hero_poster | relative_url }}"
+      {% endif %}
+    >
+      <source src="{{ page.hero_video | relative_url }}" type="video/mp4">
+      {% if page.hero_poster %}
+        <img class="home-hero__media" src="{{ page.hero_poster | relative_url }}" alt="{{ page.hero_alt }}">
+      {% endif %}
+    </video>
+  {% elsif page.hero_poster %}
+    <img class="home-hero__media" src="{{ page.hero_poster | relative_url }}" alt="{{ page.hero_alt }}">
+  {% endif %}
+  <div class="home-hero__overlay">
+    <h1 class="home-hero__title">{{ site.title }}</h1>
+    {% if page.hero_subtitle %}
+      <p class="home-hero__subtitle">{{ page.hero_subtitle }}</p>
+    {% endif %}
+  </div>
+</div>
+
+<div class="home-body">
+  <div class="home-welcome">{{ content }}</div>
+  {% if page.announcements and page.announcements.enabled %}
+    <aside class="home-news">
+      <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a></h2>
+      {% include news.liquid limit=true %}
+    </aside>
+  {% endif %}
+</div>
+
+<script>
+  // Keep the hero video looping forever. The `loop` attribute handles this in most
+  // browsers; as a backstop we also jump back to the start whenever the clip ends
+  // (or pauses at the very end — play() alone won't rewind a finished clip), and
+  // resume whenever the page becomes visible again.
+  (function () {
+    var video = document.querySelector('video.home-hero__media');
+    if (!video) return;
+    video.loop = true;
+    video.muted = true;
+    function play() {
+      var attempt = video.play();
+      if (attempt && attempt.catch) attempt.catch(function () {});
+    }
+    function restart() {
+      try {
+        video.currentTime = 0;
+      } catch (e) {}
+      play();
+    }
+    video.addEventListener('ended', restart);
+    video.addEventListener('pause', function () {
+      if (document.hidden) return;
+      if (video.duration && video.currentTime >= video.duration - 0.4) {
+        restart();
+      } else {
+        play();
+      }
+    });
+    document.addEventListener('visibilitychange', function () {
+      if (!document.hidden) play();
+    });
+    window.addEventListener('pageshow', play);
+    setInterval(function () {
+      if (document.hidden) return;
+      if (video.ended) {
+        restart();
+      } else if (video.paused) {
+        play();
+      }
+    }, 1000);
+    play();
+  })();
+</script>
