@@ -13,6 +13,13 @@ layout: page
   .profile-socials a:hover {
     color: var(--global-text-color);
   }
+  /* Make the "You?" join image a bit larger than the square member photos
+     (the fox is transparent line-art, so it reads small at the default width). */
+  @media (min-width: 576px) {
+    .profile.join-image {
+      width: 42%;
+    }
+  }
 </style>
 <div class="post">
   <article>
@@ -56,7 +63,7 @@ layout: page
 
       <!-- Open invitation -->
       <hr />
-      <div class="profile float-left">
+      <div class="profile float-left join-image">
         <img class="img-fluid" src="{{ '/assets/img/TRANSPARENT.gif' | relative_url }}" alt="Join the Rocha Lab" />
       </div>
       <div class="clearfix">
