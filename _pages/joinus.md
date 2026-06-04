@@ -2,34 +2,31 @@
 layout: page
 title: join us
 permalink: /joinus/
-description: Open positions in the Rocha Lab.
+description: We are recruiting! The Rocha Lab is a new and growing group looking for curious, motivated people at every career stage.
 nav: true
 nav_order: 6
 ---
 
-<!-- TODO: tailor each section to the actual recruiting status / target audience. -->
+We are excited to build a collaborative research group with diverse perspectives and backgrounds. If our work resonates with you, we would love to hear from you — please reach out before applying so we can find the best fit.
 
-## Postdocs
+## Prospective PhD students
 
-We are interested in hearing from postdocs whose research connects to environmental change biology.
-Email **[TODO: PI email]** with:
+Apply to the [NYU Biology PhD program](https://as.nyu.edu/departments/biology/academics/phd/applying-to-the-phd-program.html) — applications are due **December 1**, and no GRE is required. Before applying, email Joana at <a href="mailto:joana.rocha@nyu.edu">joana.rocha@nyu.edu</a> with a short note about your research interests and a CV. Feel free to ask about lab rotations.
 
-- A short paragraph on your research interests and why the Rocha Lab is a fit.
-- A CV.
-- Names of 2–3 references.
+## Postdoctoral researchers
 
-Funding: TODO — note whether the lab can provide a position, whether you'd help write a fellowship, or both.
+We welcome postdocs whose interests connect to evolutionary genomics and environmental change biology. Email Joana at <a href="mailto:joana.rocha@nyu.edu">joana.rocha@nyu.edu</a> with:
 
-## PhD students
+- a brief description of your research interests and why the lab is a good fit,
+- your CV, and
+- contact information for 2–3 references.
 
-Prospective PhD students should apply through the [NYU Department of Biology graduate program](https://as.nyu.edu/departments/biology/graduate.html). If you're considering applying and want to chat first, email **[TODO: PI email]** with a short note about your interests.
+We are also glad to develop and support fellowship applications together.
 
-## Undergraduates
+## Undergraduate & Master's students
 
-NYU undergraduates interested in research experience are welcome to reach out. Email **[TODO: PI email]** with a short note about your interests, year, and availability.
+NYU undergraduate and Master's students looking for research experience are encouraged to get in touch. Email Joana at <a href="mailto:joana.rocha@nyu.edu">joana.rocha@nyu.edu</a> with a short note about your interests, your year, and your availability.
 
-## Lab values
+---
 
-<!-- TODO: optional one paragraph on lab culture / mentoring style / what trainees get. -->
-
-The Rocha Lab is committed to a supportive, collaborative training environment. We welcome applicants from all backgrounds.
+The Rocha Lab is committed to a supportive, inclusive, and collaborative training environment, and we strongly encourage applications from people of all backgrounds and identities.
