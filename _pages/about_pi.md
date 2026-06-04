@@ -1,4 +1,4 @@
-**Joana L. Rocha**, Principal Investigator
+**Joana L. Rocha**, Principal Investigator (she/her)
 
 I'm an Assistant Professor of Biology and Principal Investigator. Before joining NYU, I was a postdoctoral researcher and proud member of the [Sudmant Lab](http://www.sudmantlab.org/) at UC Berkeley. I received my PhD in Biodiversity, Genetics and Evolution, advised by Raquel Godinho (University of Porto) and Rasmus Nielsen (UC Berkeley).
 
