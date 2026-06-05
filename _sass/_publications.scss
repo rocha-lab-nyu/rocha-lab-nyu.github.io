@@ -112,6 +112,12 @@
         > em {
           border-bottom: 1px solid;
           font-style: normal;
+          color: var(--global-text-color);
+
+          &.lead-self {
+            border-bottom: none;
+            font-weight: 700;
+          }
         }
 
         > span.more-authors {
