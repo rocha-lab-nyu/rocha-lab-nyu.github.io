@@ -4,6 +4,27 @@
 
 @use "variables" as v;
 
+.pub-legend {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.5rem;
+
+  strong {
+    font-weight: 700;
+    color: var(--global-text-color);
+  }
+
+  .pub-legend-underline {
+    border-bottom: 1px solid var(--global-text-color);
+    color: var(--global-text-color);
+  }
+
+  .pub-legend-sep {
+    margin: 0 0.6rem;
+    color: var(--global-divider-color);
+  }
+}
+
 .publications {
   margin-top: 2rem;
 
@@ -13,6 +34,19 @@
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
+  }
+
+  h2.career-stage {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--global-text-color);
+    line-height: 1.3;
+    margin-top: 3.5rem;
+    margin-bottom: 0.5rem;
+
+    &:first-of-type {
+      margin-top: 2rem;
+    }
   }
 
   h2 {
@@ -25,19 +59,26 @@
 
   h2.bibliography {
     color: var(--global-theme-color);
+    font-size: 1.35rem;
     font-weight: 600;
     border-top: none;
     border-bottom: 2px solid var(--global-theme-color);
     padding-top: 0;
     padding-bottom: 0.3rem;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
     text-align: left;
+    letter-spacing: 0.02em;
 
     span {
-      font-size: 1.9rem;
+      font-size: 1.35rem;
       letter-spacing: 0.02em;
     }
+  }
+
+  // A year header directly following a career subtitle hugs it.
+  h2.career-stage + h2.bibliography {
+    margin-top: 0.75rem;
   }
 
   ol.bibliography {
