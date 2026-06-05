@@ -7,7 +7,9 @@ nav: true
 nav_order: 6
 ---
 
-The Rocha Lab is committed to build a supportive, inclusive, and collaborative training environment. We are a small, new group looking for curious, motivated people with diverse perspectives and backgrounds, at every career stage.
+The Rocha Lab is committed to build a supportive, inclusive, and collaborative training environment. We are a small, new group at NYU Biology looking for curious, motivated people with diverse perspectives and backgrounds, at every career stage.
+
+Our campus at NYU Arts & Science lies at the heart of the coolest neighborhood of the vibrant, multicultural New York city (Greenwich Village). We hold strong bonds and ongoing collaborations with the American Museum of Natural History.
 
 ### Graduate Students
 
