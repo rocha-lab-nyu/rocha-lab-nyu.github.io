@@ -47,8 +47,25 @@
 
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+    {%- comment -%}
+      Flag papers where the lab author is (co-)first author so they can be
+      emphasized. Auto-detected when listed first; the `cofirst` bib field
+      forces it for shared first authorship.
+    {%- endcomment -%}
+    {% assign lead_author = false %}
+    {%- assign first_author = entry.author_array[0] -%}
+    {%- assign first_author_last = first_author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+    {%- if site.scholar.last_name contains first_author_last -%}
+      {%- for lead_first in site.scholar.first_name -%}
+        {%- if first_author.first contains lead_first -%}
+          {% assign lead_author = true %}
+          {% break %}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {%- if entry.cofirst -%}{% assign lead_author = true %}{%- endif -%}
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title{% if lead_author %} lead-author{% endif %}">{{ entry.title }}</div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
