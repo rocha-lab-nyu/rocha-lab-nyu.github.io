@@ -8,11 +8,79 @@ layout: default
   </style>
 {% endif %}
 
+{% if page.hero_image %}
+  <style>
+    .page-hero {
+      position: relative;
+      width: 100vw;
+      left: 50%;
+      margin-left: -50vw;
+      margin-top: -1.5rem;
+      margin-bottom: 2.5rem;
+      overflow: hidden;
+      background-color: #e9e6dd;
+    }
+    .page-hero__media {
+      display: block;
+      width: 100%;
+      height: clamp(260px, 46vh, 480px);
+      object-fit: cover;
+      object-position: center 50%;
+    }
+    .page-hero__overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+      pointer-events: none;
+    }
+    .page-hero__title {
+      margin: 0;
+      font-size: clamp(2.6rem, 7vw, 5rem);
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      color: #fff;
+      text-shadow:
+        0 2px 22px rgba(0, 0, 0, 0.55),
+        0 1px 6px rgba(0, 0, 0, 0.65);
+    }
+    .page-hero__subtitle {
+      margin: 0.5rem 0 0;
+      font-size: clamp(0.9rem, 1.7vw, 1.2rem);
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 0 1px 12px rgba(0, 0, 0, 0.6);
+    }
+    @media (max-width: 768px) {
+      .page-hero__media {
+        height: clamp(200px, 36vh, 320px);
+      }
+    }
+  </style>
+  <div class="page-hero">
+    <img class="page-hero__media" src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt | default: page.title }}">
+    <div class="page-hero__overlay">
+      <h1 class="page-hero__title">{{ page.title }}</h1>
+      {% if page.hero_subtitle %}
+        <p class="page-hero__subtitle">{{ page.hero_subtitle }}</p>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">{{ page.description }}</p>
-  </header>
+  {% unless page.hero_image %}
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-description">{{ page.description }}</p>
+    </header>
+  {% endunless %}
 
   <article>
     {{ content }}
