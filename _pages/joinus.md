@@ -7,7 +7,7 @@ nav: true
 nav_order: 6
 ---
 
-The Rocha Lab is excited and committed to build a supportive, inclusive, and collaborative training environment. We are a small, new group looking for curious, motivated people with diverse perspectives and backgrounds, at every career stage.
+The Rocha Lab is committed to build a supportive, inclusive, and collaborative training environment. We are a small, new group looking for curious, motivated people with diverse perspectives and backgrounds, at every career stage.
 
 ### Graduate Students
 
