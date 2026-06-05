@@ -103,38 +103,75 @@
       {% endfor %}
       {%- assign more_authors = author_array_size | minus: author_array_limit -%}
 
-      {%- assign more_authors_hide = more_authors | append: ' more author' -%}
-      {% if more_authors > 0 %}
-        {%- if more_authors > 1 -%}
-          {% assign more_authors_hide = more_authors_hide | append: 's' %}
+      {%- comment -%}
+        Always surface the lab author's name, even when the author list is
+        truncated. First locate their position in the full author list.
+      {%- endcomment -%}
+      {% assign self_index = 0 %}
+      {%- for self_author in entry.author_array -%}
+        {%- assign self_last = self_author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+        {%- if site.scholar.last_name contains self_last -%}
+          {%- for self_first in site.scholar.first_name -%}
+            {%- if self_author.first contains self_first -%}
+              {% assign self_index = forloop.parentloop.index %}
+              {% break %}
+            {%- endif -%}
+          {%- endfor -%}
         {%- endif -%}
-        {% assign more_authors_show = '' %}
-        {%- for author in entry.author_array offset: author_array_limit -%}
-          {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
-          {% unless forloop.last %}
-            {% assign more_authors_show = more_authors_show | append: ', ' %}
-          {% endunless %}
-        {%- endfor -%}
-        {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-        , and
-        <span
-          class="more-authors"
-          title="click to view {{ more_authors_hide }}"
-          onclick="
-              var element = $(this);
-              element.attr('title', '');
-              var more_authors_text = element.text() == '{{ more_authors_hide }}' ? '{{ more_authors_show }}' : '{{ more_authors_hide }}';
-              var cursorPosition = 0;
-              var textAdder = setInterval(function(){
-                element.html(more_authors_text.substring(0, cursorPosition + 1));
-                if (++cursorPosition == more_authors_text.length){
-                  clearInterval(textAdder);
-                }
-            }, '{{ site.more_authors_animation_delay }}');
-          "
-        >
-          {{- more_authors_hide -}}
-        </span>
+        {%- if self_index > 0 %}{% break %}{% endif -%}
+      {%- endfor -%}
+      {% assign limit_plus_one = author_array_limit | plus: 1 %}
+      {% assign self_in_overflow = false %}
+      {% if self_index >= limit_plus_one %}{% assign self_in_overflow = true %}{% endif %}
+
+      {% if more_authors > 0 %}
+        {%- if self_in_overflow -%}
+          {%- assign hidden_count = more_authors | minus: 1 -%}
+          {%- assign self_idx0 = self_index | minus: 1 -%}
+          {%- assign self_author = entry.author_array[self_idx0] -%}
+          {%- assign self_last_html = self_author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+          {%- if self_index > limit_plus_one %}, &hellip;{% endif -%}
+          {%- if hidden_count > 0 %}, {% else %}, and {% endif -%}
+          <em>{{ self_author.first }} {{ self_last_html }}</em>
+        {%- else -%}
+          {%- assign hidden_count = more_authors -%}
+        {%- endif -%}
+
+        {% if hidden_count > 0 %}
+          {%- assign more_authors_hide = hidden_count | append: ' more author' -%}
+          {%- if hidden_count > 1 -%}
+            {% assign more_authors_hide = more_authors_hide | append: 's' %}
+          {%- endif -%}
+          {% assign more_authors_show = '' %}
+          {%- for author in entry.author_array offset: author_array_limit -%}
+            {%- assign this_index = forloop.index0 | plus: limit_plus_one -%}
+            {%- if self_in_overflow and this_index == self_index -%}{% continue %}{%- endif -%}
+            {%- if more_authors_show != '' -%}
+              {% assign more_authors_show = more_authors_show | append: ', ' %}
+            {%- endif -%}
+            {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
+          {%- endfor -%}
+          {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+          , and
+          <span
+            class="more-authors"
+            title="click to view {{ more_authors_hide }}"
+            onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '{{ more_authors_hide }}' ? '{{ more_authors_show }}' : '{{ more_authors_hide }}';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.html(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '{{ site.more_authors_animation_delay }}');
+            "
+          >
+            {{- more_authors_hide -}}
+          </span>
+        {% endif %}
       {% endif %}
       {% if entry.annotation %}
         <i
