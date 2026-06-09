@@ -443,8 +443,8 @@ ninja.data = [{
           description: "The role of structural variation in speciation and adaptation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_genome-structures/";
-            },},{id: "projects-african-biodiversity",
-          title: 'African biodiversity',
+            },},{id: "projects-biodiversity-conservation",
+          title: 'Biodiversity Conservation',
           description: "Population genetics and phylogeography",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_african-biodiversity/";
