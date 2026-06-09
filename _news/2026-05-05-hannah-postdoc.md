@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Welcome Hannah M. Waterman to the lab! Hannah is the lab's first postdoctoral associate.
+Welcome Hannah M. Waterman to the lab!

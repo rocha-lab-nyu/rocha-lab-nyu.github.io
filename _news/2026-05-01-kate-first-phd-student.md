@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Kate LaVallee is now my very first PhD student! Welcome Kate!
+Kate LaVallee joined the lab! Welcome Kate!
