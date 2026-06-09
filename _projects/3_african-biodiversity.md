@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Biodiversity Conservation
-description: Population genetics and phylogeography
+description: Population and conservation genetics
 img: assets/img/sable.jpg
 importance: 3
 ---
