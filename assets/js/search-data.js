@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "research",
-          description: "Our lab&#39;s research addresses fundamental questions in environmental change biology. In particular, we study the genetic mechanisms behind how species adapt and evolve in response to changing environmental conditions, including shifts in climate, habitat, local pathogens, and resource availability.",
+          description: "Our lab&#39;s research addresses fundamental questions in ecological and evolutionary genomics. In particular, we study the genetic mechanisms behind how species adapt and evolve in response to changing environmental conditions, including shifts in climate, habitat, local pathogens, and resource availability.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
