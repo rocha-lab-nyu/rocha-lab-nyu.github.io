@@ -445,7 +445,7 @@ ninja.data = [{
               window.location.href = "/projects/2_genome-structures/";
             },},{id: "projects-biodiversity-conservation",
           title: 'Biodiversity Conservation',
-          description: "Population genetics and phylogeography",
+          description: "Population and conservation genetics",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_african-biodiversity/";
             },},{id: "teachings-data-science-fundamentals",
