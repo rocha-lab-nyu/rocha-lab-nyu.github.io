@@ -10,9 +10,10 @@ Single nucleotide polymorphism (SNP) datasets can be used to dissect the genomic
 
 Representative publications on this topic include:
 
-1. Joana L. Rocha\*, Runyang Nicolas Lou\*, and Peter H. Sudmant (2024). Structural variation in humans and our primate kin in the era of T2T genomes and pangenomics. _Current Opinion in Genetics & Development._ [10.1016/j.gde.2024.102233](https://doi.org/10.1016/j.gde.2024.102233) <br>\*co-first authors
-2. Davide Bolognini\*, Alma Halgren\*, Runyang Nicolas Lou\*, Alessandro Raveane\*, Joana L. Rocha\*, et al. (2024). Recurrent evolution and selection shape structural diversity at the amylase locus. _Nature._ [10.1038/s41586-024-07911-1](https://doi.org/10.1038/s41586-024-07911-1) <br>\*co-first authors
-3. Joana L. Rocha, Pedro Silva, Nuno Santos, et al. (2023). North-African fox genomes show signatures of repeated introgression and adaptation to life in deserts. _Nature Ecology & Evolution._ [10.1038/s41559-023-02094-w](https://doi.org/10.1038/s41559-023-02094-w)
+1. Joana L. Rocha, Runyang Nicolas Lou, Carolina L. De Lima Adam, et al. (2026). A Pan-pangenome illuminates complex structural variation and selection in humans, chimpanzees, and bonobos. _bioRxiv_ (preprint). [10.64898/2026.06.06.730619](https://doi.org/10.64898/2026.06.06.730619)
+2. Joana L. Rocha\*, Runyang Nicolas Lou\*, and Peter H. Sudmant (2024). Structural variation in humans and our primate kin in the era of T2T genomes and pangenomics. _Current Opinion in Genetics & Development._ [10.1016/j.gde.2024.102233](https://doi.org/10.1016/j.gde.2024.102233) <br>\*co-first authors
+3. Davide Bolognini\*, Alma Halgren\*, Runyang Nicolas Lou\*, Alessandro Raveane\*, Joana L. Rocha\*, et al. (2024). Recurrent evolution and selection shape structural diversity at the amylase locus. _Nature._ [10.1038/s41586-024-07911-1](https://doi.org/10.1038/s41586-024-07911-1) <br>\*co-first authors
+4. Joana L. Rocha, Pedro Silva, Nuno Santos, et al. (2023). North-African fox genomes show signatures of repeated introgression and adaptation to life in deserts. _Nature Ecology & Evolution._ [10.1038/s41559-023-02094-w](https://doi.org/10.1038/s41559-023-02094-w)
 
 Media highlights:
 
