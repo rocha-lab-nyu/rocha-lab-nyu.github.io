@@ -1,6 +1,6 @@
 ---
 layout: page
-title: African biodiversity
+title: Biodiversity Conservation
 description: Population genetics and phylogeography
 img: assets/img/sable.jpg
 importance: 3
