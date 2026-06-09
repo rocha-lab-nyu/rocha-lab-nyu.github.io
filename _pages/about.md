@@ -14,6 +14,6 @@ announcements:
   limit: 5
 ---
 
-**Welcome!** Our group studies the origins and genetic basis of how species adapt and evolve in response to changing environments. We combine state-of-the-art population and comparative genomics with natural history and field studies to understand the ecology and evolution of natural populations and species of mammals adapted to some of the Earth's most extreme biomes.
+**Welcome!** Our group studies the origins and genetic basis of how species adapt and evolve in new environments. We combine state-of-the-art population and comparative genomics with natural history and field studies to understand the ecology and evolution of natural populations and species of mammals.
 
 If you are interested in our lab, explore our [research](/research/) and [the people leading it](/people/), and read about [joining us](/joinus/).
