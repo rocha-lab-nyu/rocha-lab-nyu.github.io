@@ -435,7 +435,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-life-in-extremes",
           title: 'Life in extremes',
-          description: "The genomic basis of desert adaptation",
+          description: "Ecological and evolutionary genomics",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_life-in-extremes/";
             },},{id: "projects-genome-structures",
