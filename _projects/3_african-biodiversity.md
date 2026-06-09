@@ -6,7 +6,7 @@ img: assets/img/sable.jpg
 importance: 3
 ---
 
-We are interested in the historical events, from anthropogenic to paleoclimatic and geomorphological processes, that shaped the evolutionary histories of mammals, and the ways these factors have affected genetic variation, past population dynamics, and structure across all of the major African biomes. For comprehensive sampling of natural populations and range-wide population and conservation genomics, we rely on biobanked, cryopreserved cell lines, as well as large museum collections and scientific expeditions to the field.
+We are interested in the anthropogenic, paleoclimatic and geomorphological processes that shaped the evolutionary histories of mammals, and the ways these historical events affected genetic variation, past population dynamics, adaptive capacity and extinction risk. For comprehensive sampling of natural populations and range-wide population and conservation genomics, we rely on banked, cryopreserved cell lines, as well as large museum collections and scientific expeditions to the field.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
