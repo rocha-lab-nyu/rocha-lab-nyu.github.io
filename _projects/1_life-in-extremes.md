@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Life in extremes
-description: The genomic basis of desert adaptation
+description: Ecological and evolutionary genomics
 img: assets/img/life_in_extremes.jpg
 importance: 1
 ---
