@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joana receives the NYU Goddard Impact Award to study desert adaptation in the Arabian Peninsula, in collaboration with NYU Abu Dhabi and team members Stephane Boissinot, Sam Church, and Kristin Winchell.
+Joana receives the NYU Goddard Impact Award to study desert adaptation in collaboration with NYU/NYU Abu Dhabi researchers!
