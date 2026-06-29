@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-06-19'
+  last_updated: '2026-06-29'
 papers:
   eL8onmAAAAAJ:0EnyYjriUFMC:
     citations: 1
     title: Humans have evolved to digest starch more easily since the advent of farming
     year: '2024'
   eL8onmAAAAAJ:2osOgNQ5qMEC:
-    citations: 25
+    citations: 27
     title: "Convergent evolution of increased urine\u2010concentrating ability in desert mammals"
     year: '2021'
   eL8onmAAAAAJ:3s1wT3WcHBgC:
@@ -14,19 +14,19 @@ papers:
     title: Rapid turnover and recurrent structural variation at the 17q21. 31 locus in modern and ancient human genomes, and primates
     year: '2025'
   eL8onmAAAAAJ:4OULZ7Gr8RgC:
-    citations: 0
+    citations: 1
     title: A Pan-pangenome illuminates complex structural variation and selection in humans, chimpanzees, and bonobos
     year: '2026'
   eL8onmAAAAAJ:IjCSPb-OGe4C:
-    citations: 41
+    citations: 43
     title: North African fox genomes show signatures of repeated introgression and adaptation to life in deserts
     year: '2023'
   eL8onmAAAAAJ:LkGwnXOMwfcC:
-    citations: 86
+    citations: 89
     title: Recurrent evolution and selection shape structural diversity at the amylase locus
     year: '2024'
   eL8onmAAAAAJ:Tyk-4Ss8FVUC:
-    citations: 124
+    citations: 125
     title: The complete sequence and comparative analysis of ape sex chromosomes
     year: '2024'
   eL8onmAAAAAJ:UebtZRa9Y70C:
@@ -38,11 +38,11 @@ papers:
     title: Global diversity, recurrent evolution, and recent selection on amylase structural haplotypes in humans
     year: '2024'
   eL8onmAAAAAJ:_FxGoFyzp5QC:
-    citations: 12
+    citations: 13
     title: Structural variation in humans and our primate kin in the era of telomere-to-telomere genomes and pangenomics
     year: '2024'
   eL8onmAAAAAJ:d1gkVwhDpl0C:
-    citations: 109
+    citations: 110
     title: 'Life in deserts: the genetic basis of mammalian desert adaptation'
     year: '2021'
   eL8onmAAAAAJ:fPk4N6BV_jEC:
@@ -50,7 +50,7 @@ papers:
     title: "Multiple introgression events from ghost R\xFCppell\u2019s fox mitochondrial lineages into red fox"
     year: '2026'
   eL8onmAAAAAJ:qjMakFHDy7sC:
-    citations: 15
+    citations: 16
     title: African climate and geomorphology drive evolution and ghost introgression in sable antelope
     year: '2022'
   eL8onmAAAAAJ:rO6llkc54NcC:
@@ -62,12 +62,12 @@ papers:
     title: The maternal history of the sable antelope (Hippotragus niger) inferred from the genomic analysis of complete mitochondrial sequences
     year: '2014'
   eL8onmAAAAAJ:ufrVoPGSRksC:
-    citations: 187
+    citations: 193
     title: Complete sequencing of ape genomes
     year: '2025'
   eL8onmAAAAAJ:zA6iFVUQeVQC:
     citations: 1
-    title: Comparative genomics of Tandem Repeat variation in apes
+    title: Tandem repeat variation within and between species reveals signatures of selection in humans and chimpanzees
     year: '2026'
   eL8onmAAAAAJ:zYLM7Y9cAGgC:
     citations: 5
