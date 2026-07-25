@@ -27,9 +27,22 @@ profiles:
     image: alex.jpg
     content: about_alex.md
     image_circular: false
-
-  - align: right
-    image: isabel_cantor.jpg
-    content: about_isabel.md
-    image_circular: false
 ---
+
+<h2>Alumni</h2>
+
+<table class="alumni-table">
+  <thead>
+    <tr><th>Name</th><th>Lab position</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Isabel Cantor</td><td>Undergraduate Researcher</td></tr>
+  </tbody>
+</table>
+
+<h2>Lab life</h2>
+
+<video class="lab-life-video" controls loop muted autoplay playsinline preload="metadata">
+  <source src="{{ '/assets/video/lab_life.mp4' | relative_url }}" type="video/mp4">
+</video>
+

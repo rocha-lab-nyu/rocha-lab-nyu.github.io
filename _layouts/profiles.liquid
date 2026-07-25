@@ -20,6 +20,82 @@ layout: page
       width: 42%;
     }
   }
+
+  /* Extra people-page sections (alumni, lab life) below the member profiles. */
+  .people-extra {
+    margin-top: 3.5rem;
+  }
+  .people-extra h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--global-theme-color);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-bottom: 0.35rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .people-extra > h2:first-child {
+    margin-top: 0;
+  }
+
+  /* Alumni */
+  .alumni-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+  .alumni-table th,
+  .alumni-table td {
+    text-align: left;
+    padding: 0.5rem 0.75rem 0.5rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+    vertical-align: top;
+  }
+  .alumni-table th {
+    color: var(--global-text-color-light);
+    font-weight: 600;
+  }
+  .alumni-note {
+    color: var(--global-text-color-light);
+  }
+
+  /* Lab life photo gallery */
+  .lab-life-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+  .lab-life-gallery figure {
+    margin: 0;
+  }
+  .lab-life-gallery picture,
+  .lab-life-gallery img {
+    display: block;
+    width: 100%;
+  }
+  .lab-life-gallery img {
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+  }
+  .lab-life-gallery img:hover {
+    transform: scale(1.02);
+  }
+  .lab-life-caption {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
+  }
+  .lab-life-video {
+    display: block;
+    margin: 1rem auto 0;
+    max-height: 560px;
+    max-width: 100%;
+    border-radius: 12px;
+    background: #000;
+  }
 </style>
 <div class="post">
   <article>
@@ -100,6 +176,10 @@ layout: page
           <a href="{{ '/joinus/' | relative_url }}">joining us</a>.
         </p>
       </div>
+
+      {% if content != blank %}
+        <div class="people-extra">{{ content }}</div>
+      {% endif %}
     {% endif %}
   </article>
 </div>
