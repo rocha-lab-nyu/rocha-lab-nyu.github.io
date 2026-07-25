@@ -31,18 +31,13 @@ profiles:
 
 <h2>Alumni</h2>
 
-<table class="alumni-table">
-  <thead>
-    <tr><th>Name</th><th>Lab position</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Isabel Cantor</td><td>Undergraduate Researcher</td></tr>
-  </tbody>
-</table>
-
-<h2>Lab life</h2>
-
-<video class="lab-life-video" controls loop muted autoplay playsinline preload="metadata">
-  <source src="{{ '/assets/video/lab_life.mp4' | relative_url }}" type="video/mp4">
-</video>
+<div class="alumni-list">
+  <div class="alumni-group">
+    <div class="alumni-group__title">Undergraduate Students</div>
+    <div class="alumnus">
+      <div class="alumnus-name">Isabel Cantor (Summer 2026)</div>
+      <div class="alumnus-now">Current position: Undergraduate student, pre-med track, NYU Gallatin</div>
+    </div>
+  </div>
+</div>
 

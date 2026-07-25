@@ -38,22 +38,27 @@ layout: page
     margin-top: 0;
   }
 
-  /* Alumni */
-  .alumni-table {
-    width: 100%;
-    border-collapse: collapse;
+  /* Alumni — grouped by category (bold), plain list */
+  .alumni-group {
+    margin-bottom: 1.75rem;
+  }
+  .alumni-group__title {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--global-text-color);
+    margin-bottom: 0.5rem;
+  }
+  .alumni-list .alumnus {
+    margin-bottom: 1rem;
+  }
+  .alumnus-name {
     font-size: 0.95rem;
+    color: var(--global-text-color);
   }
-  .alumni-table th,
-  .alumni-table td {
-    text-align: left;
-    padding: 0.5rem 0.75rem 0.5rem 0;
-    border-bottom: 1px solid var(--global-divider-color);
-    vertical-align: top;
-  }
-  .alumni-table th {
+  .alumnus-now {
+    font-size: 0.95rem;
+    margin-top: 0.1rem;
     color: var(--global-text-color-light);
-    font-weight: 600;
   }
   .alumni-note {
     color: var(--global-text-color-light);
@@ -87,14 +92,6 @@ layout: page
     color: var(--global-text-color-light);
     font-size: 0.9rem;
     margin-top: 0.75rem;
-  }
-  .lab-life-video {
-    display: block;
-    margin: 1rem auto 0;
-    max-height: 560px;
-    max-width: 100%;
-    border-radius: 12px;
-    background: #000;
   }
 </style>
 <div class="post">
