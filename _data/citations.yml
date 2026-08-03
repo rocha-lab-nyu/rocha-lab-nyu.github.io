@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-24'
+  last_updated: '2026-08-03'
 papers:
   eL8onmAAAAAJ:0EnyYjriUFMC:
     citations: 1
@@ -18,19 +18,19 @@ papers:
     title: A Pan-pangenome illuminates complex structural variation and selection in humans, chimpanzees, and bonobos
     year: '2026'
   eL8onmAAAAAJ:IjCSPb-OGe4C:
-    citations: 45
+    citations: 47
     title: North African fox genomes show signatures of repeated introgression and adaptation to life in deserts
     year: '2023'
   eL8onmAAAAAJ:LkGwnXOMwfcC:
-    citations: 91
+    citations: 94
     title: Recurrent evolution and selection shape structural diversity at the amylase locus
     year: '2024'
   eL8onmAAAAAJ:Tyk-4Ss8FVUC:
-    citations: 128
+    citations: 130
     title: The complete sequence and comparative analysis of ape sex chromosomes
     year: '2024'
   eL8onmAAAAAJ:UebtZRa9Y70C:
-    citations: 2
+    citations: 3
     title: 'TRACKing tandem repeats: a customizable pipeline for identification and cross-species comparison'
     year: '2025'
   eL8onmAAAAAJ:Y0pCki6q_DkC:
@@ -38,11 +38,11 @@ papers:
     title: Global diversity, recurrent evolution, and recent selection on amylase structural haplotypes in humans
     year: '2024'
   eL8onmAAAAAJ:_FxGoFyzp5QC:
-    citations: 13
+    citations: 14
     title: Structural variation in humans and our primate kin in the era of telomere-to-telomere genomes and pangenomics
     year: '2024'
   eL8onmAAAAAJ:d1gkVwhDpl0C:
-    citations: 110
+    citations: 109
     title: 'Life in deserts: the genetic basis of mammalian desert adaptation'
     year: '2021'
   eL8onmAAAAAJ:dfsIfKJdRG4C:
@@ -66,12 +66,12 @@ papers:
     title: The maternal history of the sable antelope (Hippotragus niger) inferred from the genomic analysis of complete mitochondrial sequences
     year: '2014'
   eL8onmAAAAAJ:ufrVoPGSRksC:
-    citations: 200
+    citations: 209
     title: Complete sequencing of ape genomes
     year: '2025'
   eL8onmAAAAAJ:zA6iFVUQeVQC:
     citations: 1
-    title: Tandem repeat variation within and between species reveals signatures of selection in humans and chimpanzees
+    title: Comparative genomics of Tandem Repeat variation in apes
     year: '2026'
   eL8onmAAAAAJ:zYLM7Y9cAGgC:
     citations: 5
