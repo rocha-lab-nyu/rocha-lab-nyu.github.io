@@ -22,6 +22,11 @@ profiles:
     image: kate_lavallee.jpg
     content: about_kate.md
     image_circular: false
+
+  - align: left
+    image: lucia_kitsos.jpg
+    content: about_lucia.md
+    image_circular: false
 ---
 
 <h2>Alumni</h2>
