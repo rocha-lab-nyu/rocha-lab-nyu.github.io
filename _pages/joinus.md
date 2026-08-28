@@ -6,8 +6,8 @@ description:
 nav: true
 nav_order: 6
 
-hero_image: /assets/img/joinus_hero.jpg
-hero_alt: Washington Square Park in Greenwich Village, New York City
+hero_image: /assets/img/joinus_hero_arch.jpg
+hero_alt: The top of the Washington Square Arch lit up at night, Greenwich Village, New York City
 ---
 
 The Rocha Lab is committed to build a supportive, inclusive, and collaborative training environment. We are a small, new group at NYU Biology looking for curious, motivated people with diverse perspectives and backgrounds, at every career stage.
