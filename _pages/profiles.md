@@ -22,11 +22,6 @@ profiles:
     image: kate_lavallee.jpg
     content: about_kate.md
     image_circular: false
-
-  - align: left
-    image: alex.jpg
-    content: about_alex.md
-    image_circular: false
 ---
 
 <h2>Alumni</h2>
@@ -37,6 +32,10 @@ profiles:
     <div class="alumnus">
       <div class="alumnus-name">Isabel Cantor (Summer 2026)</div>
       <div class="alumnus-now">Current position: Undergraduate student, pre-med track, NYU Gallatin</div>
+    </div>
+    <div class="alumnus">
+      <div class="alumnus-name">Alexander Graber (Summer 2026)</div>
+      <div class="alumnus-now">Current position: Undergraduate student, Biology major, Vassar College</div>
     </div>
   </div>
 </div>
