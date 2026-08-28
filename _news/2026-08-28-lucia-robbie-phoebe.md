@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Welcome Lucia, Robbie and Phoebe to the lab!
+Welcome undergraduate students Lucia, Robbie and Phoebe to the lab!
