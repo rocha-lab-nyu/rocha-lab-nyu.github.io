@@ -27,6 +27,11 @@ profiles:
     image: lucia_kitsos.jpg
     content: about_lucia.md
     image_circular: false
+
+  - align: right
+    image: robert_sallash.jpg
+    content: about_robbie.md
+    image_circular: false
 ---
 
 <h2>Alumni</h2>
