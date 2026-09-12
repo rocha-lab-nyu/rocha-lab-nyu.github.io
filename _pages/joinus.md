@@ -68,8 +68,32 @@ We have limited spaces available for undergraduate students outside NYU CAS Biol
 <div class="lab-gallery">
   <figure class="lab-gallery__card">
     <figcaption class="lab-gallery__title">Board games night</figcaption>
-    <video class="lab-gallery__media" loop muted autoplay playsinline preload="auto">
+    <video
+      class="lab-gallery__media"
+      loop
+      muted
+      autoplay
+      playsinline
+      preload="auto"
+      poster="{{ '/assets/video/lab_life_poster.jpg' | relative_url }}"
+    >
       <source src="{{ '/assets/video/lab_life.mp4' | relative_url }}" type="video/mp4">
+    </video>
+  </figure>
+  <figure class="lab-gallery__card">
+    <figcaption class="lab-gallery__title">
+      Kate and other members of the Biology team at the NYU Biology retreat, Museum of the Moving Image
+    </figcaption>
+    <video
+      class="lab-gallery__media"
+      loop
+      muted
+      autoplay
+      playsinline
+      preload="auto"
+      poster="{{ '/assets/video/lab_retreat_poster.jpg' | relative_url }}"
+    >
+      <source src="{{ '/assets/video/lab_retreat.mp4' | relative_url }}" type="video/mp4">
     </video>
   </figure>
 </div>
@@ -78,26 +102,28 @@ We have limited spaces available for undergraduate students outside NYU CAS Biol
   // Keep the lab-life clip looping forever, restarting if a browser lets it end
   // and resuming when the tab becomes visible again.
   (function () {
-    var v = document.querySelector(".lab-gallery__media");
-    if (!v) return;
-    v.muted = true;
-    v.loop = true;
-    function play() {
-      var p = v.play();
-      if (p && p.catch) p.catch(function () {});
-    }
-    v.addEventListener("ended", function () {
-      try {
-        v.currentTime = 0;
-      } catch (e) {}
+    var videos = [].slice.call(document.querySelectorAll(".lab-gallery__media"));
+    if (!videos.length) return;
+    videos.forEach(function (v) {
+      v.muted = true;
+      v.loop = true;
+      function play() {
+        var p = v.play();
+        if (p && p.catch) p.catch(function () {});
+      }
+      v.addEventListener("ended", function () {
+        try {
+          v.currentTime = 0;
+        } catch (e) {}
+        play();
+      });
+      v.addEventListener("pause", function () {
+        if (!document.hidden) play();
+      });
+      document.addEventListener("visibilitychange", function () {
+        if (!document.hidden) play();
+      });
       play();
     });
-    v.addEventListener("pause", function () {
-      if (!document.hidden) play();
-    });
-    document.addEventListener("visibilitychange", function () {
-      if (!document.hidden) play();
-    });
-    play();
   })();
 </script>
