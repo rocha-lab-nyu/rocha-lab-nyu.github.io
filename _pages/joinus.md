@@ -82,7 +82,7 @@ We have limited spaces available for undergraduate students outside NYU CAS Biol
   </figure>
   <figure class="lab-gallery__card">
     <figcaption class="lab-gallery__title">
-      Kate and other members of the Biology team at the NYU Biology retreat, Museum of the Moving Image
+      Kate and other members of NYU Biology made an amazing video at the department's retreat at the Museum of the Moving Image
     </figcaption>
     <video
       class="lab-gallery__media"
