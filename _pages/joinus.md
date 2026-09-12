@@ -46,7 +46,8 @@ We have limited spaces available for undergraduate students outside NYU CAS Biol
     margin-top: 1rem;
   }
   .lab-gallery__card {
-    flex: 0 1 320px;
+    /* grow to share the row; wrap only on genuinely narrow screens */
+    flex: 1 1 240px;
     margin: 0;
     padding: 1rem;
     border: 1px solid var(--global-divider-color);
@@ -59,7 +60,11 @@ We have limited spaces available for undergraduate students outside NYU CAS Biol
   }
   .lab-gallery__media {
     display: block;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
+    /* keep the portrait clip from towering over the landscape one */
+    max-height: 430px;
+    margin: 0 auto;
     border-radius: 8px;
     background: #000;
   }
