@@ -43,6 +43,13 @@ profiles:
 
 <div class="alumni-list">
   <div class="alumni-group">
+    <div class="alumni-group__title">PhD Rotation Students</div>
+    <div class="alumnus">
+      <div class="alumnus-name">Rafael Baez (Spring 2026)</div>
+      <div class="alumnus-now">Current position: PhD student, Biology, CEL</div>
+    </div>
+  </div>
+  <div class="alumni-group">
     <div class="alumni-group__title">Undergraduate Students</div>
     <div class="alumnus">
       <div class="alumnus-name">Isabel Cantor (Summer 2026)</div>
