@@ -24,11 +24,16 @@ profiles:
     image_circular: false
 
   - align: left
+    image: abbie_patalinghug.jpg
+    content: about_abbie.md
+    image_circular: false
+
+  - align: right
     image: lucia_kitsos.jpg
     content: about_lucia.md
     image_circular: false
 
-  - align: right
+  - align: left
     image: robert_sallash.jpg
     content: about_robbie.md
     image_circular: false
