@@ -46,7 +46,7 @@ profiles:
     <div class="alumni-group__title">PhD Rotation Students</div>
     <div class="alumnus">
       <div class="alumnus-name">Rafael Baez (Spring 2026)</div>
-      <div class="alumnus-now">Current position: PhD student, Biology, CEL</div>
+      <div class="alumnus-now">Current position: PhD student, Biology, CEL, NYU</div>
     </div>
   </div>
   <div class="alumni-group">
