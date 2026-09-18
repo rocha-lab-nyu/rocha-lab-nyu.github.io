@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Cynthia Valladon and Abbie Patalinghug join for a rotation - welcome both!
+Cynthia Valadon and Abbie Patalinghug join for a rotation - welcome both!

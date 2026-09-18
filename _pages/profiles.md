@@ -29,11 +29,16 @@ profiles:
     image_circular: false
 
   - align: right
+    image: cynthia_valadon.jpg
+    content: about_cynthia.md
+    image_circular: false
+
+  - align: left
     image: lucia_kitsos.jpg
     content: about_lucia.md
     image_circular: false
 
-  - align: left
+  - align: right
     image: robert_sallash.jpg
     content: about_robbie.md
     image_circular: false
