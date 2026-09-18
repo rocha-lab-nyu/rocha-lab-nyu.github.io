@@ -48,6 +48,8 @@ We have limited spaces available for undergraduate students outside NYU CAS Biol
   .lab-gallery__card {
     /* grow to share the row; wrap only on genuinely narrow screens */
     flex: 1 1 240px;
+    /* stop a card that lands alone on a row from stretching full width */
+    max-width: 340px;
     margin: 0;
     padding: 1rem;
     border: 1px solid var(--global-divider-color);
@@ -99,6 +101,22 @@ We have limited spaces available for undergraduate students outside NYU CAS Biol
       poster="{{ '/assets/video/lab_retreat_poster.jpg' | relative_url }}"
     >
       <source src="{{ '/assets/video/lab_retreat.mp4' | relative_url }}" type="video/mp4">
+    </video>
+  </figure>
+  <figure class="lab-gallery__card">
+    <figcaption class="lab-gallery__title">
+      Hannah and other members of NYU Biology made an amazing video at the department's retreat at the Museum of the Moving Image
+    </figcaption>
+    <video
+      class="lab-gallery__media"
+      loop
+      muted
+      autoplay
+      playsinline
+      preload="auto"
+      poster="{{ '/assets/video/lab_retreat_hannah_poster.jpg' | relative_url }}"
+    >
+      <source src="{{ '/assets/video/lab_retreat_hannah.mp4' | relative_url }}" type="video/mp4">
     </video>
   </figure>
 </div>
