@@ -74,7 +74,9 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          # Track the 3.3 series: newer runner images only ship the latest
+          # patch, so pinning an exact patch (3.3.5) breaks on image bumps.
+          ruby-version: "3.3"
           bundler-cache: true
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
