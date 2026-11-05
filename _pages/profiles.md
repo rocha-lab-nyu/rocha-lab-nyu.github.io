@@ -24,16 +24,6 @@ profiles:
     image_circular: false
 
   - align: left
-    image: abbie_patalinghug.jpg
-    content: about_abbie.md
-    image_circular: false
-
-  - align: right
-    image: cynthia_valadon.jpg
-    content: about_cynthia.md
-    image_circular: false
-
-  - align: left
     image: blair_guo.jpg
     content: about_blair.md
     image_circular: false
@@ -57,6 +47,12 @@ profiles:
     <div class="alumnus">
       <div class="alumnus-name">Rafael Baez (Spring 2026)</div>
       <div class="alumnus-now">Current position: Biology PhD student, Church Evolution Lab, NYU</div>
+    </div>
+    <div class="alumnus">
+      <div class="alumnus-name">Cynthia Valadon (Fall 2026)</div>
+    </div>
+    <div class="alumnus">
+      <div class="alumnus-name">Abbie Patalinghug (Fall 2026)</div>
     </div>
   </div>
   <div class="alumni-group">
